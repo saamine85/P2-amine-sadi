@@ -17,8 +17,10 @@ h3 {
   margin-top: 10px;
 }
 p {
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 14px;
+  /* text-align: justify; */
 }
 
 /* -----------------start header---------------- */
@@ -39,7 +41,9 @@ li a {
 /* ----------------end header--------------------- */
 /* ----------------start nav------------------- */
 nav ul {
+  margin-left: -20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
   height: 30px;
@@ -118,16 +122,83 @@ i.fa-map-marker-alt {
   font-weight: bold;
   margin-right: 20px;
 }
-span {
+.button-text {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   left: -11px;
-  background-color: #c8deff;
+  background-color: #19c921;
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 50%;
-  color: #0065fc;
+  color: #00b5fc;
 }
 /* --------------end filtres------------------- */
+/* --------------start info -----------*/
+i.fa-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:12px;
+  background-color: #f2f2f2;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color: #16c534;
+  margin-right:10px;
+  }
+.info{
+display:flex;
+align-items: center;
+}
+/* --------------end info -----------*/
+aside{
+  /* background-color: #DEEBFF; */
+}
+
+.card-side{
+  display: flex;
+  height: 150px;
+  width:350px;
+  background-color: #DEEBFF;
+
+
+}
+.card-image img{
+height: 150px;
+width: 150px;
+}
+.card-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.card-text span{
+  color: #0065fc;
+}
+
+
+
+
+
+/* .paragraph { */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: ; */
+  /* width: 1.4rem; */
+  /* height: 1.4rem; */
+  /* border-radius: 50%; */
+  /* border: 1px solid #b4b0b0; */
+  /* color: #0065fc; */
+  /* border-radius: 50%; */
+  /* margin-right: 20px; */
+}
+/* .info{ */
+  /* position: absolute; */
+  /* margin-left: 15px; */
+
+  /* flex-wrap: nowrap; */
+/* } */
