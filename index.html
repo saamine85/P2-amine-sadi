@@ -9,95 +9,251 @@
   </head>
   <body>
     <header>
-      <!-- start header -->
-      <img src="imgs/logo/Reservia.svg" alt="" />
-      <ul>
-        <li><a href="http://">S'inscrire</a></li>
-      </ul>
       <!-- end header -->
+      <div class="logo">
+        <img src="images/logo/Reservia.svg" alt="" />
+        <!-- Navigation start -->
+
+        <a href="http://">S'inscrire</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Hébergements</a></li>
+          <li><a href="http://">Activités</a></li>
+        </ul>
+      </nav>
+      <!-- navigation end -->
+      <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+      <!-- button search start -->
+
+      <form>
+        <label><i class="fas fa-map-marker-alt"></i> </label>
+        <input type="text" value="Marseille,France" />
+        <button><i class="fas fa-search"></i></button>
+      </form>
+      <!-- button search end -->
+
+      <!-- filtres start -->
+      <h2 class="filter">Filtres</h2>
+      <div class="filtres">
+        <button type="button" class="button">
+          <span class="button-text"
+            ><i class="fas fa-money-bill-wave"></i
+          ></span>
+          Économique
+        </button>
+        <button type="button" class="button">
+          <span class="button-text"> <i class="fas fa-child"></i> </span
+          >Familial
+        </button>
+        <button type="button" class="button">
+          <span class="button-text"> <i class="fas fa-heart"></i> </span
+          >Romantique
+        </button>
+        <button type="button" class="button">
+          <span class="button-text"><i class="fas fa-dog"></i> </span> Animaux
+          Autorisés
+        </button>
+      </div>
+
+      <p class="info">
+        <span class="paragraph"><i class="fas fa-info"></i></span> Plus de 500
+        logements sont disponibles dans cette ville
+      </p>
     </header>
-    <!-- Navigation start -->
-    <nav>
-      <ul>
-        <li><a href="">Hébergements</a></li>
-        <li><a href="http://">Activités</a></li>
-      </ul>
-    </nav>
-    <!-- navigation end -->
 
-    <h3>Trouver votre hybergement pour des vacances de reve</h3>
-    <p>En plein centre ville ou en pleine nature</p>
-    <!-- button search start -->
-
-    <form>
-      <label><i class="fas fa-map-marker-alt"></i> </label>
-      <input type="text" value="Marseille,France" />
-      <button><i class="fas fa-search"></i></button>
-    </form>
-    <!-- button search end -->
-
-    <!-- filtres start -->
-    <h3 class="filter">Filtres</h3>
-    <div class="filtres">
-      <button type="button" class="button">
-        <span class="button-text"><i class="fas fa-money-bill-wave"></i></span>
-        Économique
-      </button>
-      <button type="button" class="button">
-        <span class="button-text"> <i class="fas fa-child"></i> </span>Familial
-      </button>
-      <button type="button" class="button">
-        <span class="button-text"> <i class="fas fa-heart"></i> </span
-        >Romantique
-      </button>
-      <button type="button" class="button">
-        <span class="button-text"><i class="fas fa-dog"></i> </span> Animaux
-        Autorisés
-      </button>
-    </div>
-
-    <p class="info">
-      <span class="paragraph"><i class="fas fa-info"></i></span> plus de 500
-      logements sont disponibles dans cette ville
-    </p>
-
-    <!-- filtres end -->
+    <!-------------------- end header------------------------------------------------ -->
 
     <aside>
-      <h2>Les plus poulaires</h2>
-      <span>icon</span>
+      <div class="side-header">
+        <h2>Les plus poulaires</h2>
+        <span><i class="fas fa-chart-line"></i></span>
+      </div>
+
       <div class="card-side">
-        <div class="card-image">
+        <div class="side-image">
           <img
-            src="/imgs/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
             alt=""
           />
         </div>
         <div class="card-text">
-          <h3>Hotel le soleil du matin</h3>
-          <p>Nuit a partir de 128 &euro;</p>
+          <div class="card-header">
+            <h3>Hôtel le soleil du matin</h3>
+            <p>Nuit à partir de <span class="price"> 128 &euro;</span></p>
+          </div>
           <span
             ><i class="fas fa-star"><i class="fas fa-star"></i> </i
             ><i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="far fa-star"></i>
+            ><i class="fas fa-star"></i>
           </span>
         </div>
       </div>
-      <!-- </div>
-      <div class="cardSide">
-        <div class="card-image">card2</div>
-        <h3>title</h3>
-        <p>text</p>
-        <span>icon</span>
+      <div class="card-side">
+        <div class="side-image">
+          <img
+            src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <div class="card-header">
+            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+            <p>Nuit à partir de <span class="price"> 71 &euro;</span></p>
+          </div>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><span class="star"><i class="fas fa-star"></i></span>
+          </span>
+        </div>
       </div>
-      <div class="cardSide">
-        <div class="card-image">card3</div>
-        <h3>title</h3>
-        <p>text</p>
-        <span>icon</span>
-      </div> -->
+      <div class="card-side">
+        <div class="side-image">
+          <img
+            src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <div class="card-header">
+            <h3>Hôtel Tout bleu et Blanc</h3>
+            <p>Nuit à partir de <span class="price"> 68 &euro;</span></p>
+          </div>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><span class="star"><i class="fas fa-star"></i></span>
+          </span>
+        </div>
+      </div>
     </aside>
-
+    <!-------------------------------- start section main -->
+    <section class="main">
+      <h2>Hébergement à Marseille</h2>
+ 
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Auberge la cannebière</h3>
+          <p>Nuit à partir de <span class="price-main"> 25 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><span class="main-star"><i class="fas fa-star"></i></span>
+          </span>
+          
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements//4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Hôtel du port</h3>
+          <p>Nuit à partir <span class="price-main"> 52 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Hôtel Les mouettes</h3>
+          <p>Nuit à partir de <span class="price-main"> 76 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><span class="main-star"><i class="fas fa-star"></i></span>
+          </span>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Hôtel de la mer</h3>
+          <p>Nuit à partir de <span class="price-main"> 46 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><span class="main-star"><i class="fas fa-star"></i></span>
+            <span class="main-star"><i class="fas fa-star"></i></span>
+          </span>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Auberge le panier</h3>
+          <p>Nuit à partir de <span class="price-main"> 23 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><span class="main-star"><i class="fas fa-star"></i></span>
+          </span>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Hôtel chez Amina</h3>
+          <p>Nuit à partir de  <span class="price-main"> 96 &euro;</span></p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <!-- <div class="card-main">
+        <div class="main-image">
+          <img
+            src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-text">
+          <h3>Hôtel le soleil du matin</h3>
+          <p>Nuit à partir de 128 &euro;</p>
+          <span
+            ><i class="fas fa-star"><i class="fas fa-star"></i> </i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </section> -->
     <!-- script fontawesome -->
     <script
       src="https://kit.fontawesome.com/c9fb6ef9dd.js"
