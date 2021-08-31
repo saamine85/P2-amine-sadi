@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,32 +8,31 @@
     <title>Reservia</title>
   </head>
   <body>
+    <!-- start header -->
     <header>
-      <!-- end header -->
-      <div class="logo">
+      <div class="logo-nav">
         <img src="images/logo/Reservia.svg" alt="" />
         <!-- Navigation start -->
-
-        <a href="#">S'inscrire</a>
+        <nav>
+          <ul>
+            <li><a href="#Hébergements">Hébergements</a></li>
+            <li><a href="#Activités">Activités</a></li>
+            <li class="inscrire"><a href="#inscrire">S'inscrire</a></li>
+          </ul>
+        </nav>
+        <!-- navigation end -->
       </div>
-      <nav>
-        <ul>
-          <li><a href="#Hébergements">Hébergements</a></li>
-          <li><a href="#Activités">Activités</a></li>
-        </ul>
-      </nav>
-      <!-- navigation end -->
       <h1>Trouver votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
       <!-- button search start -->
-
       <form>
         <label><i class="fas fa-map-marker-alt"></i> </label>
         <input type="text" value="Marseille,France" />
-        <button><i class="fas fa-search"><span>Rechercher</span></i></button>
+        <button>
+          <i class="fas fa-search"><span>Rechercher</span></i>
+        </button>
       </form>
       <!-- button search end -->
-
       <!-- filtres start -->
       <div class="filtres">
         <h2 class="filter">Filtres</h2>
@@ -63,12 +62,12 @@
         </p>
       </div>
     </header>
-
     <!--end header -->
+    <div class="container"></div>
     <section class="section">
       <aside>
         <div class="side-header">
-          <h2>Les plus poulaires</h2>
+          <h2>Les plus populaires</h2>
           <span><i class="fas fa-chart-line"></i></span>
         </div>
         <div class="populaire">
@@ -133,9 +132,7 @@
       </aside>
       <!-- start section main -->
       <section class="main">
-        <div class="header-main">
-        <h2>Hébergement à Marseille</h2>
-        </div>
+          <h2>Hébergement à Marseille</h2> 
         <div class="card master">
           <div class="card-main">
             <div class="main-image">

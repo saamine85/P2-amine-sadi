@@ -3,28 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* root{
-  --colorbg--: #f2f2f2;
-  --colortext--:#0065fc;
-} */
+root {
+  --white: #f2f2f2;
+  --blue: #0065fc;
+}
 body {
-  /* margin: 2.5rem; */
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  /* margin: 20px ; */
 }
 h1 {
+  padding-top: 10px;
   text-align: start;
-  font-size: 1.5625rem;
+  font-size: 1.4rem;
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: .9rem;
 }
 h2 {
   margin: 20px;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 ul {
   list-style-type: none;
@@ -33,66 +32,57 @@ ul {
 header {
   margin: 20px;
 }
-.logo {
-  display: flex;
+/* ----------------start nav------------------- */
+header.logo-nav {
   justify-content: space-between;
   align-items: center;
 }
-.logo a {
-  list-style: none;
-  text-decoration: none;
-  font-weight: bold;
-  color: #0065fc;
-}
-li a {
-  text-decoration: none;
-}
-/* ----------------end header--------------------- */
-/* ----------------start nav------------------- */
-
 header nav ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
   margin-left: -20px;
   margin-right: -20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  /* padding-left: 20px; */
-  justify-content: space-around;
-  /* align-items: c; */
-  /* height: 30px; */
+  border-bottom: 3px solid rgba(185, 185, 185, 0.432);
+  padding-bottom: 10px;
 }
-header ul li {
-  border-bottom: 2px solid #ccc;
-  width: 50%;
-  padding-bottom: 5px;
-  text-align: center;
+
+.inscrire a {
+  position: absolute;
+  right: 20px;
+  top: -40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight: bold;
+}
+.inscrire a:hover {
+  border-bottom: none;
 }
 header li a {
-  color: black;
+  padding-left: 40px;
+  padding-right: 60px;
 }
 header li a:hover {
-  color: rgb(76, 91, 230);
+  --a-blue: #0065fc;
+  color: var(--a-blue);
+  border-bottom: 3px solid var(--a-blue);
+  padding-bottom: 10px;
 }
-
-header ul li:hover {
-  border-bottom: 2px solid rgb(76, 91, 230);
-}
-/* end nav */
-
 /* --------------start form search------------------- */
 
 form {
   position: relative;
   display: flex;
-  height: 2.5rem;
+  height: 3rem;
   justify-content: flex-start;
   align-items: center;
   margin-top: 30px;
 }
-
 input[type="text"] {
-  height: 2.8125rem;
-  border: 1px solid #f2f2f2;
+  height: 3rem;
+  border: 1px solid #f1f0f0;
   padding: 10px;
   font-family: inherit;
   font-weight: bold;
@@ -103,9 +93,9 @@ form button {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: -10px;
-  width: 15%;
-  height: 2.8125rem;
+  left: -20px;
+  width: 3rem;
+  height: 3rem;
   border: none;
   padding: 20px;
   background-color: #0065fc;
@@ -125,17 +115,17 @@ i.fa-map-marker-alt {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.8125rem;
-  height: 2.8125rem;
-  background-color: #f2f2f2;
+  width: 3rem;
+  height: 3rem;
+  background-color: #f1f0f0;
   border-radius: 10px 0px 0px 10px;
   font-size: 1.25rem;
 }
 /* --------------end form search------------------- */
 /* --------------start filtres------------------- */
-
 .filtres h2 {
-  width: auto; /*quand ca sera en ecran pleine enleve le width 100%*/
+  width: 100%; /*quand ca sera en ecran pleine enleve le width 100%*/
+  font-weight: bold;
 }
 .filtres {
   display: flex;
@@ -148,10 +138,10 @@ i.fa-map-marker-alt {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 2.8125rem;
-  border: 1px solid #eeecec;
+  height: 3rem;
+  border: 2px solid #f1f0f0;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #fff;
@@ -159,8 +149,12 @@ i.fa-map-marker-alt {
   margin-top: 10px;
   font-family: inherit;
   font-weight: bold;
-  font-size: 16px;
+  font-size: inherit;
   margin-left: 20px;
+}
+.button:hover {
+  background-color: #0065fc;
+  color: #fff;
 }
 .button-text {
   display: flex;
@@ -169,8 +163,8 @@ i.fa-map-marker-alt {
   position: relative;
   left: -15px;
   background-color: #ebf1ff;
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   color: #0065fc;
   font-size: 1.25rem;
@@ -191,9 +185,9 @@ i.fa-info {
 }
 .info p {
   display: flex;
-  /* align-items: center; */
 }
 /* --------------end info -----------*/
+/* ----------------end header--------------------- */
 aside {
   margin-top: 30px;
   padding-bottom: 20px;
@@ -213,7 +207,6 @@ aside {
   display: flex;
   margin: 20px;
   height: 160px;
-  /* width: 335px ; */
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -248,15 +241,12 @@ p .price {
   background-color: rgb(152, 152, 209);
 }
 .card-main {
-  /* width: 335px ; */
-  /* display: block; */
   margin: 20px;
   height: 210px;
   background-color: #eee;
   border-radius: 20px;
 }
 .main-image img {
-  /* background-size: contain; */
   height: 120px;
   width: 100%;
   object-fit: cover;
@@ -292,17 +282,10 @@ span .main-star {
   padding-bottom: 10px;
   background-color: rgb(57, 160, 143);
 }
-/* .card{
-  display:grid;
-  grid-template-columns:repeat(4,auto);
-  grid-template-rows:repeat(2,auto);
-
-} */
 .card-mainfull {
   width: auto;
   margin: 20px;
   height: 210px;
-  /* width: 335px ; */
   background-color: #eee;
   border-radius: 20px;
 }
@@ -316,17 +299,11 @@ span .main-star {
 .mainfull h3 {
   padding-top: 10px;
 }
-
 footer {
   background-color: aquamarine;
   padding-top: 40px;
   padding-left: 20px;
   padding-bottom: 50px;
-  /* display: flex;
-  gap: 100px; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* gap: 200px; */
 }
 footer ul {
   list-style-type: none;
@@ -343,6 +320,46 @@ footer a {
 /* media querries */
 /* mobile */
 @media (min-width: 767px) {
+  body {
+    margin: 20px 40px;
+  }
+  header .logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: -30px;
+    border-bottom: none;
+    padding-top: 0px;
+    border-top: transparent;
+  }
+  .inscrire a {
+    position: static;
+    font-weight: normal;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .inscrire a:hover {
+    border-bottom: none;
+  }
+  header li a {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  header li a:hover {
+    color: blue;
+    border-top: 3px solid blue;
+    border-bottom: none;
+    padding-top: 20px;
+  }
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -351,13 +368,6 @@ footer a {
   .card {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-  }
-  .populaire {
-    /* display:flex; */
-    /* width: 100%; */
-    /* flex-wrap: wrap; */
-
-    /* grid-template-columns:33%; */
   }
   form span {
     display: flex;
@@ -375,22 +385,23 @@ footer a {
     border-radius: 0px 10px 10px 0px;
   }
 }
+header {
+  margin-top: 20px;
+}
+li a {
+  text-decoration: none;
+}
 @media (min-width: 1023px) {
-  /* form span {
-    display: flex;
-    color: #fff;
-    position: relative;
-    left: -10px;
+  .filtres {
+    flex-wrap: nowrap;
   }
-  i.fa-search {
+  .info p {
     display: flex;
-    color: transparent;
+    align-items: center;
   }
-  form button {
-    left: -20px;
-    width: 150px;
-    
-  } */
+  .filtres h2 {
+    width: auto; /*quand ca sera en ecran pleine enleve le width 100%*/
+  }
   footer {
     display: flex;
     flex-wrap: wrap;
@@ -432,24 +443,43 @@ footer a {
     order: 2;
   }
 }
-@media (min-width: 1200px) {
-  body {
-    margin: 40px;
-  }
-  .filtres {
-    flex-wrap: nowrap;
-  }
-  .info p {
-    display: flex;
-    align-items: center;
-  }
 
-  .side-header {
+/* .side-header {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .header-main {
+  .text-plus h3 {
     margin-left: 20px;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 150px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .master {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .populaire {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .section {
+    display: grid;
+    grid-template-columns: auto 30%;
+    gap: 40px;
+  } */
+
+@media (min-width: 1200px) {
+  .side-header {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .text-plus h3 {
     margin-left: 20px;
@@ -479,85 +509,3 @@ footer a {
     gap: 40px;
   }
 }
-
-/* @media (min-width: 768px) {
-  .card {
-
-
-  }
-  /* .vieux-port {
-    height: 400px;
-  }
-  .vieux-port img {
-    height: 350px;
-    background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  } */
-/* footer {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 160px;
-  }
-} */
-/* larg screen */
-/* @media (min-width: 992) {
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 4fr));
-  }
-  .vieux-port {
-    height: 410px;
-  }
-  .vieux-port img {
-    height: 350px;
-    background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  }
-  .parc {
-    height: 410px;
-  }
-  .parc img {
-    height: 350px;
-    background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  }
-} */
-/* xlarge screen */
-/* @media (min-width: 1200px) {
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
-    display: grid; */
-/* grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); */
-/* grid-template-columns: repeat(auto-fit, 1fr); */
-/* } */
-/* .vieux-port {
-    height: 410px;
-  }
-  .vieux-port img {
-    height: 350px;
-    background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  }
-  .parc {
-    height: 410px;
-  }
-  .parc img {
-    height: 350px;
-    background-image: url(/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  } */
-/* } */
-/* @media (min-width: 1200px) {
-  .card{
-    grid-template-columns: repeat(4,1fr) ;
-    align-content: center;
-  }
-  .vieux-port{
-    height: 410px;
-  }
-  .vieux-port img{
-    height: 500px;
-  }
-} */
