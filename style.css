@@ -13,17 +13,19 @@ body {
 h1 {
   padding-top: 10px;
   text-align: start;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 p {
   margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: .9rem;
+  font-size: 0.95rem;
 }
 h2 {
   margin: 20px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1rem;
 }
 ul {
   list-style-type: none;
@@ -101,7 +103,7 @@ form button {
   background-color: #0065fc;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 form span {
   display: none;
@@ -119,7 +121,7 @@ i.fa-map-marker-alt {
   height: 3rem;
   background-color: #f1f0f0;
   border-radius: 10px 0px 0px 10px;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 /* --------------end form search------------------- */
 /* --------------start filtres------------------- */
@@ -176,15 +178,18 @@ i.fa-info {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  background-color: #f2f2f2;
+  border: 2px solid #f1f0f0;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   color: #0065fc;
   margin-right: 10px;
+  position: relative;
+  top: -4px;
 }
-.info p {
+.para-filtres {
   display: flex;
+  margin-top: 30px;
 }
 /* --------------end info -----------*/
 /* ----------------end header--------------------- */
@@ -192,7 +197,8 @@ aside {
   margin-top: 30px;
   padding-bottom: 20px;
   padding-top: 10px;
-  background-color: rgb(200, 200, 201);
+  background-color: #eee;
+  border-radius: 20px;
 }
 .side-header {
   display: flex;
@@ -200,81 +206,95 @@ aside {
   justify-content: space-between;
 }
 .side-header span {
-  margin-right: 20px;
-  font-size: 1.875rem;
+  margin-left: 90px;
 }
 .card-side {
   display: flex;
   margin: 20px;
-  height: 160px;
-  background-color: #ffffff;
+  height: 150px;
+  background-color: #fff;
   border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card-side:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.card-side:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .side-image img {
-  height: 160px;
-  width: 160px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 20px 0 0 20px;
-  border: #fff 3px solid;
+  border: #fff 4px solid;
+  transition: all 0.5s;
 }
 .card-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-.card-text span {
+.fa-star {
   color: #0065fc;
+  font-size: 0.8rem;
 }
-span .star {
-  color: #c4c4c4;
+span .note {
+  color: #eee;
 }
 p .price {
   font-weight: bold;
-  color: inherit;
 }
 /* -----------------start card main */
 .main {
   margin-top: 30px;
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: rgb(152, 152, 209);
 }
 .card-main {
   margin: 20px;
-  height: 210px;
-  background-color: #eee;
+  height: 200px;
+  background-color: #fff;
   border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-main:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.card-main:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .main-image img {
   height: 120px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  border: #fff 5px solid;
+  border: #fff 4px solid;
+  transition: all 0.5s;
 }
 .main-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin-left: 20px;
   padding-bottom: 5px;
   margin-right: 20px;
 }
-.main-text span {
-  color: #0065fc;
+.card-main p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-p .price-main {
-  font-weight: bold;
-  color: inherit;
-}
-span .main-star {
-  color: #c4c4c4;
-}
-.main .text-plus {
+.text-plus a {
   margin-left: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 /* start section mainfull */
 .mainfull {
@@ -435,7 +455,7 @@ li a {
   .populaire {
     display: grid;
   }
-  .section {
+  .container {
     display: grid;
     grid-template-columns: 1fr 40%;
   }
@@ -481,7 +501,7 @@ li a {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .text-plus h3 {
+  .text-plus a {
     margin-left: 20px;
   }
   footer {
@@ -503,7 +523,7 @@ li a {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .section {
+  .container {
     display: grid;
     grid-template-columns: auto 30%;
     gap: 40px;
