@@ -512,7 +512,6 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 65px);
-    margin-left: ;
   }
   .vieux-port,
   .parc {
