@@ -554,7 +554,5 @@ footer a:hover {
     grid-row-end: 9;
     height: auto;
   }
-  footer {
-    padding-bottom: -40px;
-  }
+  
 }
